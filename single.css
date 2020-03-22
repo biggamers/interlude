@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Montserrat:400,600');
 *{box-sizing:border-box}
-body {margin: 0;}
+body {
+  background: url(background.png);
+  margin: 0;
+}
 .top {
   padding: 10px 0;
   background: #f0e6e6;
@@ -20,7 +23,7 @@ a {
   display: inline-block;
   font-weight: bold;
 }
-.container {
+container {
   padding: 0 20px;
   max-width: 960px;
   margin: 0 auto;
@@ -57,3 +60,30 @@ nav a:last-child {margin-right:0;}
     text-align: center;
     margin-top: 50px;
 }
+.button-container a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 180px;
+  margin: 10px 20px;
+  padding: 20px 30px;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font-family: 'Montserrat', sans-serif;overflow:hidden;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing:2px;
+  color: #b8182d;
+  background: #f0e6e6;
+  transition: color .3s, background .5s;
+  }
+  .button-container a:hover {
+  animation: stripes-move 0.75s infinite linear;
+  background:linear-gradient(45deg, #ffdbe7 25%, #a84016 25%, #a84016 50%, #ffdbe7 50%, #ffdbe7 75%, #a84016 75%, #a84016);
+  background-size: 10px 10px;
+  color: #4d4242;
+  }
+  @keyframes stripes-move {
+    from { background-position: 0 0; }
+    to { background-position: 50px 0; }
+  }
