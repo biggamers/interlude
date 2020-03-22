@@ -14,7 +14,7 @@ a {
 .top a {
   font-size: 13px;
   text-transform: uppercase;
-  font-family: Cambria, Georgia, serif;
+  font-family: 'Comfortaa', cursive;
   letter-spacing: 1px;
   color: #333;
   display: inline-block;
@@ -28,14 +28,14 @@ a {
 header {text-align: center;}
 h1 {
   font-size: 2.5em;
-  font-family: 'Comfortaa', cursive;
+  font-family: Cambria, Georgia, serif;
   color: #524f4e;
   font-weight: 300;
 }
 h1 span {font-weight: 700}
 p {
   font-size: 1.1em;
-  font-family: 'Comfortaa', cursive;
+  font-family: Cambria, Georgia, serif;
   color: #A8B3B8;
   }
 nav {margin-top: 50px}
