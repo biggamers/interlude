@@ -1,6 +1,6 @@
 class Game {
   constructor() {
-    this.screen = new Screen(640, 640);
+    this.screen = new Screen(document.documentElement.clientWidth, document.documentElement.clientHeight);
     this.scenes = {
       loading: new Loading(this)
     };
