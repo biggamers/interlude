@@ -1,6 +1,6 @@
 class Game {
   constructor() {
-    this.screen = new Screen(document.documentElement.clientWidth, document.documentElement.clientHeight);
+    this.screen = new Screen(document.documentElement.clientWidth, (document.documentElement.clientHeight - document.getElementById('top').clientHeight - 4));
     this.scenes = {
       loading: new Loading(this)
     };
@@ -79,4 +79,4 @@ window.onload = () => {
   interlude.run();
 };
 
-console.log('ку');
+console.log(document.getElementById('top').clientHeight);
